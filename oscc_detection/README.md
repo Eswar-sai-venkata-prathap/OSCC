@@ -1,10 +1,10 @@
-# 🔬 OSCC Detection — Deep Learning Framework for Oral Cancer Diagnosis
+#  OSCC Detection — Deep Learning Framework for Oral Cancer Diagnosis
 
 **Microscope-Aided Deep Learning Framework for Early Oral Squamous Cell Carcinoma (OSCC) Detection**
 
 A complete deep learning pipeline that analyses histopathology microscope images of oral tissue to classify them as **Normal** or **OSCC (Cancerous)**, with clinical risk levels and Grad-CAM visual explanations.
 
-## ✨ Key Features
+##  Key Features
 
 - **Automated dataset download** from Kaggle with train/val/test splitting
 - **Patch-based analysis** — images split into 224×224 patches for fine-grained inspection
@@ -17,7 +17,7 @@ A complete deep learning pipeline that analyses histopathology microscope images
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌────────────────────────────────────────────────────────────────────┐
@@ -69,7 +69,7 @@ A complete deep learning pipeline that analyses histopathology microscope images
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 oscc_detection/
@@ -102,7 +102,7 @@ oscc_detection/
 
 ---
 
-## 📋 Requirements
+##  Requirements
 
 - **Python** 3.9+
 - **GPU** recommended (NVIDIA with CUDA) — CPU is supported but slower
@@ -121,7 +121,7 @@ oscc_detection/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ```bash
 # 1. Clone the repository
@@ -139,7 +139,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📥 Dataset Setup
+##  Dataset Setup
 
 1. **Get a Kaggle API key:**
    - Go to [kaggle.com/account](https://www.kaggle.com/account)
@@ -153,13 +153,13 @@ pip install -r requirements.txt
 
 3. **Expected output:**
    ```
-   ✅ Kaggle credentials found for user: your_username
-   ⏳ Downloading dataset …
-   ✅ Download complete.
-   ⏳ Splitting into train / val / test (70 / 15 / 15) …
+    Kaggle credentials found for user: your_username
+    Downloading dataset …
+    Download complete.
+    Splitting into train / val / test (70 / 15 / 15) …
 
    =====================================================
-              📊  DATASET STATISTICS
+               DATASET STATISTICS
    =====================================================
    Split        Normal       OSCC      Total
    -----------------------------------------------
@@ -171,7 +171,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🏋️ Training
+##  Training
 
 ```bash
 python src/train.py --epochs 50 --backbone efficientnet --rnn_type lstm
@@ -196,7 +196,7 @@ Training automatically saves:
 
 ---
 
-## 📊 Evaluation
+##  Evaluation
 
 ```bash
 python src/evaluate.py
@@ -210,7 +210,7 @@ Generates:
 
 ---
 
-## 🔍 Explainability (Grad-CAM)
+##  Explainability (Grad-CAM)
 
 ```bash
 python src/gradcam.py
@@ -226,7 +226,7 @@ Saved to `outputs/heatmaps/`.
 
 ---
 
-## 📓 Demo Notebook
+##  Demo Notebook
 
 ```bash
 cd notebooks
@@ -238,7 +238,7 @@ load image → extract patches → predict → explain with Grad-CAM.
 
 ---
 
-## 📈 Results (Placeholder)
+##  Results (Placeholder)
 
 | Metric | Value |
 |--------|-------|
@@ -252,7 +252,7 @@ load image → extract patches → predict → explain with Grad-CAM.
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 - **Multi-centre validation** — test on datasets from multiple hospitals
 - **Multi-class grading** — extend to well / moderately / poorly differentiated OSCC
@@ -263,7 +263,7 @@ load image → extract patches → predict → explain with Grad-CAM.
 
 ---
 
-## 📚 References
+## References
 
 1. **Dataset:** Ashenafi Fasil Kebede, *Oral Cancer (OSCC) Histopathology Image Dataset*, Kaggle.
    https://www.kaggle.com/datasets/ashenafifasilkebede/dataset
