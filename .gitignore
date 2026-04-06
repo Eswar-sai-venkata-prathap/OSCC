@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.h5
+*.png
+outputs/
+models/
+plots/
+data/
